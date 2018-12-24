@@ -1,0 +1,20 @@
+<view class="box">
+  <!-- search-bar -->
+  <search-bar value="" onSubmit="handleSubmit" id="search"/>
+
+  <list class="list">
+    <view slot="header">成员列表</view>
+    <block a:for="{{items}}">
+      <list-item
+        key="item-{{index}}"
+        index="{{index}}"
+        last="{{index === (items.length - 1)}}"
+        onClick="salesDetail"
+        arrow=true>
+        {{item.name}}
+        <view slot="extra">查看详情</view>
+      </list-item>
+    </block>
+  </list>
+  
+</view>

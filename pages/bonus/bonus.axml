@@ -1,0 +1,23 @@
+<view class="box">
+  <!-- 标题 -->
+  <view class="titlebox">
+    <text class="maintitle">奖金策略</text>
+  </view>
+  
+  <!-- 奖金策略 -->
+  <block a:for="{{bonuslist}}">
+    <view class="bounsbox">
+      <view class="between"><text class="strongsize">开始时间:</text><text>{{item.startday}}</text></view>
+      <view class="between"><text class="strongsize">结束时间:</text><text>{{item.endday}}</text></view>
+      <view class="between"><text class="strongsize">相关产品:</text><text>{{item.examineproduct}}</text></view>
+      <view class="between"><text class="strongsize">考核类型:</text><text>{{item.examinetypes}}</text></view>
+      <view class="between"><text class="strongsize">奖金金额:</text><text>{{item.bonus}} 元</text></view>
+      <view class="between"><text class="strongsize">执行状态:</text><text>{{item.status}}</text></view>
+      <view class="between"><text class="strongsize">考核人:</text><text>{{item.leader}}</text></view>
+      <view class="between"><text class="strongsize">被考核人:</text><text>{{item.myname}}</text></view>
+      <view class="between"><text class="strongsize">备注:</text><text>{{item.note}}</text></view>
+    </view>
+  </block>
+  
+  <!-- endbox -->
+</view>

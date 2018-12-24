@@ -1,0 +1,34 @@
+<view class="box">
+  <!-- 标题 -->
+  <view class="titlebox">
+    <text class="maintitle">合作排行榜</text>
+    <text class="smalltitle">（默认显示半年内）</text>
+  </view>
+  <!-- 日期筛选框 -->
+  <view class="dateBox">
+      <view class="chooseDate">
+          <view class="dateInput">
+                  <input value="{{startDate}}" onFocus="startDate" type="text" placeholder="请选择开始日期" />
+          </view>
+          <view>__</view>
+          <view class="dateInput">
+                  <input value="{{endDate}}" onFocus="endDate" type="text" placeholder="请选择结束日期" />
+          </view>
+      </view>
+  </view>
+  
+  <!-- 排行榜 -->
+  <list class="list">
+    <list-item>姓名
+      <view slot="extra">佣金</view>
+    </list-item>
+    <block a:for="{{items}}">
+      <list-item key="item-{{index}}" index="{{index}}" last="{{index === (items.length - 1)}}">{{item.name}}
+        <view slot="extra">{{item.fee}} 元</view>
+      </list-item>
+    </block>
+  </list>
+
+  
+  </view>
+</view>

@@ -1,0 +1,25 @@
+<view class="box">
+  <!-- 标题 -->
+  <view class="titlebox">
+    <text class="maintitle">产品销量</text>
+    <text class="smalltitle">（默认显示半年内）    
+    </text>
+  </view>
+  <!-- 日期筛选 -->
+  <view class="dateBox">
+    <view class="chooseDate">
+      <view class="dateInput">
+        <input value="{{startDate}}" onFocus="startDate" type="text" placeholder="请选择开始日期" auto-focus />
+      </view>
+      <view>__</view>
+      <view class="dateInput">
+        <input value="{{endDate}}" onFocus="endDate" type="text" placeholder="请选择结束日期" auto-focus />
+      </view>
+    </view>
+  </view>
+
+  <!-- 图表 -->
+  <view class="container middlechart" style="width:100%;height:50%;">
+    <dd-charts canvasId="ddchart-dom-bar" onDraw="onDraw"></dd-charts>
+  </view>
+</view>

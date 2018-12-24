@@ -1,0 +1,8 @@
+list{margin-bottom: 50rpx;}
+list-item {border-bottom: 1rpx solid #cccccc;}
+.salesDetail{padding:50rpx 0;}
+.title{line-height: 100rpx;padding-left: 50rpx;}
+.kpibox{ width: 100%;padding: 30rpx 100rpx; box-sizing: border-box;border-bottom: 1rpx solid #cccccc;font-size: 24rpx;line-height: 50rpx;background:#ffffff;}
+.kpibox .name{color:grey;font-weight: bolder;font-size: 36rpx;}
+.kpibox .strongsize{color:#999999;font-weight: bolder;}
+.kpibox .between{display: flex;justify-content: space-between;border-bottom: 1rpx dotted lightgrey;}

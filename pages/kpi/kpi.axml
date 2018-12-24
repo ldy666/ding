@@ -1,0 +1,24 @@
+<view class="box">
+  <!-- 业绩完成图 -->
+  <view class="kpibox">
+    <view class="titlebox">
+      <text class="maintitle" >本月kpi完成度</text>
+    </view>
+    <view class="container middlechart">
+    <dd-charts canvasId="ddchart-dom-bar" onDraw="onDraw"></dd-charts>
+    </view>
+  </view>
+  <!-- 项目说明 -->
+  <view class="explain">
+    <text>
+      1、KPI是根据各部门月初会议讨论过后一致通过，然后制定的当月绩效考核标准; \n
+      2、图表显示数据为当前考核月第一天至昨天的数据统计而成。
+    </text>
+  </view>
+
+</view>
+
+
+
+
+    

@@ -1,0 +1,75 @@
+<import src="/pages/tem/tem.axml"/>
+<view class="box">
+  <!-- 上月销售排行 -->
+  <view class="titlebox" style="">
+    <text class="maintitle">上月销售排行</text>
+  </view>
+  <list>
+    <block a:for="{{items}}">
+      <list-item
+        key="item-{{index}}"
+        index="{{index}}"
+        last="{{index === (items.length - 1)}}"
+      >
+        {{item.title}}
+        <view class="am-list-brief">{{item.brief}}</view>
+        <view slot="extra">
+          {{item.extra}}
+        </view>
+      </list-item>
+    </block>
+  </list>
+
+  <!-- 业绩完成图 -->
+  <view style="margin:50rpx 0;">
+    <view class="titlebox" style="">
+      <text class="maintitle">本月kpi完成度</text>
+    </view>
+    <view class="container middlechart" style="">
+      <dd-charts canvasId="ddchart-dom-bar" onDraw="onDraw"></dd-charts>
+    </view>
+  </view>
+
+<!-- 销售详情 -->
+  <view class="salesDetail">
+
+    <view class="titlebox">
+      <text class="maintitle">本月销售详情 \n</text>
+    </view>
+    <!-- 成员选择器 -->
+    <view class="section">
+      <picker onChange="bindObjPickerChange" value="{{index}}" range="{{array}}" range-key="name" style="width:100%;">
+        <view class="row">
+          <view class="row-title">选择销售</view>
+          <view class="row-extra">当前选择：{{array[index]}}          
+            <view class="selecticon">
+              <image class="row-arrow" src="/pages/index/images/select.png" />
+            </view>
+          </view>
+        </view>
+      </picker>
+    </view>
+    
+    <!-- 详情列表 -->
+    <block a:for="{{details}}">
+      <view class="kpibox">
+        <view><text class="name">{{item.name}}</text></view>
+        <view class="between"><text class="strongsize">考核产品:</text><text>{{item.product}}</text></view>
+        <view class="between"><text class="strongsize">产品类别:</text><text>{{item.product_kind}}</text></view>
+        <view class="between"><text class="strongsize">销售单价:</text><text>{{item.price}} 元</text></view>
+        <view class="between"><text class="strongsize">销量:</text><text>{{item.salenum}} 件</text></view>
+        <view class="between"><text class="strongsize">销售额:</text><text>{{item.sales}} 元</text></view>
+        <view class="between"><text class="strongsize">考核类型:</text><text>{{item.examinetypes}}</text></view>
+        <view class="between"><text class="strongsize">考核标准:</text><text>{{item.examine}} 元</text></view>
+        <view class="between"><text class="strongsize">考核周期:</text><text>{{item.examinecycle}}</text></view>
+        <view class="between"><text class="strongsize">完成度:</text><text>{{item.finish}}</text></view>
+        <view class="between"><text class="strongsize">奖金情况:</text><text>{{item.bonus}}元</text></view>
+        <view class="between"><text class="strongsize">佣金支出:</text><text>{{item.brokerage_fee}}元</text></view>
+      </view>
+    </block>
+
+  <!-- salesDetail end -->
+  </view>
+<!-- endbox -->
+</view>
+

@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/kpi/kpi",
+    "pages/bonus/bonus",
+    "pages/brokerage_fee/brokerage_fee",
+    "pages/performance/performance",
+    "pages/tem/tem",
+    "pages/client/client",
+    "pages/team/team",
+    "pages/team_performance/team_performance",
+    "pages/clientDetail/clientDetail",
+    "pages/salesDetail/salesDetail",
+    "pages/product/product"
+  ],
+  "window": {
+    "defaultTitle": "5"
+  }
+}

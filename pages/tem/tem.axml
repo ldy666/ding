@@ -1,0 +1,28 @@
+<!-- 时间选择器 -->
+<template name="chooseDate">
+  <view class="chooseDate">
+    <view class="dateInput">
+            <input value="{{startDate}}" onFocus="startDate" type="text" placeholder="请选择开始日期" auto-focus />
+    </view>
+    <view class="dateInput">
+            <input value="{{endDate}}" onFocus="endDate" type="text" placeholder="请选择结束日期" auto-focus />
+    </view>
+  </view>
+</template>
+
+<!-- 下拉框:调用页面读不到数据 -->
+<template name="selectinfo">
+  <view class="section">
+    <picker onChange="bindObjPickerChange" value="{{index}}" range="{{array}}" range-key="name" style="width:100%;">
+    <view class="row" > 
+      <view class="row-title" >选择器</view>
+      <view class="row-extra" >当前选择：{{array[index]}}
+        <view class="selecticon">
+          <image class="row-arrow" src="/pages/index/images/select.png" />
+        </view>
+      </view>
+    </view>
+  </picker>
+  </view>
+</template>
+

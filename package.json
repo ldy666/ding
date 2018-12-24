@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@antv/f2": "^3.3.0",
+    "dd-charts": "^1.0.5",
+    "mini-ddui": "^0.0.5"
+  }
+}

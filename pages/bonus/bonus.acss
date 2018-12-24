@@ -1,0 +1,5 @@
+
+.title{line-height: 100rpx;padding-left: 50rpx;}
+.bounsbox{ width: 100%;padding: 30rpx 100rpx; box-sizing: border-box;font-size: 24rpx;line-height: 50rpx;background: #ffffff;margin-top: 20rpx;}
+.bounsbox .strongsize{color:#999999;font-weight: bolder;}
+.bounsbox .between{display: flex;justify-content: space-between;border-bottom: 1rpx dotted lightgrey;}

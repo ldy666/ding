@@ -1,0 +1,64 @@
+<view class="box">
+  
+  <view class="title">
+    <view class="banner"><image src="images/banner.jpg" /></view>
+    <view class="txt">工作报表</view>
+  </view>
+
+  <view class="itemlist">
+    
+    <view class="parts">
+      <text class="partstitle">个人项<image src="images/tag.png" /></text>
+      <view class="part">
+        <navigator url="/pages/kpi/kpi" hover-class="navigator-hover">
+          <image class="icon" src="images/kpi.png" />
+          <view>目标kpi</view>
+        </navigator>
+    
+      <navigator url="/pages/performance/performance" hover-class="navigator-hover">
+        <image class="icon" src="images/performance.png" />
+        <view>销售业绩</view>
+      </navigator>
+    
+      <navigator url="/pages/bonus/bonus" hover-class="navigator-hover">
+        <image class="icon" src="images/bonus.png" />
+        <view>奖金策略</view>
+      </navigator>
+  
+      <navigator url="/pages/brokerage_fee/brokerage_fee" hover-class="navigator-hover">
+        <image class="icon" src="images/brokerage_fee.png" />
+        <view>佣金</view>
+      </navigator>
+    </view>
+  </view>
+
+  <!-- <view class="parts" a:if="{{ leader }}">   -->
+  <view class="parts">
+    <text class="partstitle">团队项<image src="images/tag.png" /></text>
+    <view class="part">
+      <navigator url="/pages/client/client" hover-class="navigator-hover">
+        <image class="icon" src="images/client.png" />
+        <view>查看客户</view>
+      </navigator>
+    
+      <navigator url="/pages/team/team" hover-class="navigator-hover">
+        <image class="icon" src="images/team.png" />
+        <view>团队管理</view>
+      </navigator>
+    
+      <navigator url="/pages/team_performance/team_performance" hover-class="navigator-hover">
+        <image class="icon" src="images/team_performance.png" />
+        <view>团队业绩</view>
+      </navigator>
+
+      <navigator url="/pages/product/product" hover-class="navigator-hover">
+        <image class="icon" src="images/product.png" />
+        <view>产品销量</view>
+      </navigator>
+
+    </view>
+  </view>
+ 
+</view>
+</view>
+

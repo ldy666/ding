@@ -1,0 +1,8 @@
+{
+    "usingComponents":{
+    "dd-charts": "dd-charts/es/f2/index",
+    "search-bar":"mini-ddui/es/search-bar/index",
+    "list":"mini-ddui/es/list/index",
+    "list-item":"mini-ddui/es/list/list-item/index"
+  }
+}

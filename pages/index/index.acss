@@ -1,0 +1,14 @@
+.box{width:100%;background: #ffffff;line-height: 50rpx;}
+.title{position: relative;}
+.title .banner{width:100%;height: 400rpx;text-align: center;font-size: 0;}
+.title image{width:100%;height: 400rpx; }
+.title .txt{width: 100%;height: 40%;background: rgba(0, 0, 0, 0.6);position: absolute;bottom: 0;left: 0;color:#ffffff;font-size:36rpx;line-height: 200rpx;padding-left: 50rpx;box-sizing: border-box;}
+
+.itemlist .parts{ width: 100%; padding: 50rpx 50rpx;box-sizing: border-box;margin-bottom: 50rpx;}
+.itemlist .partstitle{line-height: 50rpx;padding:0 300rpx 0 30rpx;color: #828282;border-bottom: 1rpx dotted #B5B5B5;box-sizing: border-box;}
+.itemlist .partstitle image{width: 25rpx;height: 25rpx;margin-left: 10rpx;}
+
+.itemlist .part{ width: 100%;text-align: center;display: flex;justify-content:space-around;padding-top: 20rpx;flex-wrap: wrap;}
+.parts view{font-size: 16rpx;color: #828282;line-height: 50rpx;}
+navigator{width: 70rpx;height: 70rpx;padding: 10rpx;text-align: center;font-size: 0;border-radius: 20rpx;border: 3rpx solid #e86090;}
+navigator .icon{width: 70rpx;height: 70rpx;}

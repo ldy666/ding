@@ -1,0 +1,15 @@
+<view class="box">
+  <view class="clientinfo">
+      <view class="between"><text class="strongsize">客户姓名:</text><text>张三</text></view>
+      <view class="between"><text class="strongsize">所属机构:</text><text>无</text></view>
+      <view class="between"><text class="strongsize">联系方式:</text><text>13512341234</text></view>
+      <view class="between"><text class="strongsize">邮箱:</text><text>123@qq.com</text></view>
+      <view class="between"><text class="strongsize">身份证号码:</text><text>130303199912129090</text></view>
+      <view class="between"><text class="strongsize">或 护照号码:</text><text></text></view>
+      <view class="between"><text class="strongsize">生日:</text><text>19991212</text></view>
+      <view class="between"><text class="strongsize">地址:</text><text>上海市</text></view>
+      <view class="between"><text class="strongsize">产品需求:</text><text>产品1 产品2</text></view>
+      <view class="between"><text class="strongsize">跟进销售:</text><text>赵</text></view>
+      <view class="between"><text class="strongsize">销售电话:</text><text>12312345678</text></view>
+    </view>
+</view>

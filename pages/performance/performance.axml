@@ -1,0 +1,29 @@
+<view class="box">
+  <!-- 标题 -->
+  <view class="titlebox">
+    <text class="maintitle">个人销售额统计图</text>
+    <text class="smalltitle">(默认显示半年内)</text>
+  </view>
+  <!-- 日期筛选框 -->
+  <view class="dateBox">
+    <view class="chooseDate">
+      <view class="dateInput">
+        <input value="{{startDate}}" onFocus="startDate" type="text" placeholder="请选择开始日期" auto-focus=false />
+      </view>
+      <view>__</view>
+      <view class="dateInput">
+        <input value="{{endDate}}" onFocus="endDate" type="text" placeholder="请选择结束日期" auto-focus=false />
+      </view>
+    </view>
+  </view>
+  <!-- 图表 -->
+  <view class="container middlechart">
+    <dd-charts canvasId="ddchart-dom-bar" onDraw="onDraw"></dd-charts>
+  </view>
+  <!-- 图表说明 -->
+  <view class="explain">
+    <text>
+      1、图表显示的数据仅为半年内每月各产品的销售额，供参考，和kpi无关。
+    </text>
+</view>
+</view>

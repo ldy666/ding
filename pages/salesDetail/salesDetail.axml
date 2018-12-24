@@ -1,0 +1,12 @@
+<view class="box">
+  <view class="salesinfo">
+      <view class="between"><text class="strongsize">姓名:</text><text>赵</text></view>
+      <view class="between"><text class="strongsize">职位:</text><text>销售经理</text></view>
+      <view class="between"><text class="strongsize">所属地域:</text><text>上海市</text></view>
+      <view class="between"><text class="strongsize">联系方式:</text><text>13512341234</text></view>
+      <view class="between"><text class="strongsize">邮箱:</text><text>123@qq.com</text></view>
+      <view class="between"><text class="strongsize">地址:</text><text>上海市浦东新区</text></view>
+      <view class="between"><text class="strongsize">跟进客户:</text><text>张三 李四</text></view>
+      <view class="between"><text class="strongsize">负责产品:</text><text>产品1 产品2 产品3</text></view>
+    </view>
+</view>
